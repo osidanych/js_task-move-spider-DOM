@@ -19,7 +19,7 @@ document.addEventListener('click', (e) => {
   let newTop = clickY - spiderHeight / 2;
 
   left = Math.max(0, Math.min(left, wall.clientWidth - spiderWidth));
-  newTop = Math.max(0, Math.min(top, wall.clientHeight - spiderHeight));
+  newTop = Math.max(0, Math.min(newTop, wall.clientHeight - spiderHeight));
 
   spider.style.position = 'absolute';
   spider.style.left = `${left}px`;
